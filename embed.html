@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado centros sanitarios especializados en UC</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+
+<body>
+  <div class="bh-sl-container container-fluid">
+      <div class="container">
+          <div class="bh-sl-form-container">
+              <form id="bh-sl-user-location" class="form-inline" method="post" action="#" role="form">
+                  <div class="form-input form-group">
+                      <input class="form-control" type="text"
+                             id="bh-sl-address" name="bh-sl-address"
+                             onFocus="geolocate()"
+                             size="60"
+                             placeholder="Introduce dirección o código postal"/>
+                  </div>
+                  
+                  <button id="bh-sl-submit" class="btn btn-primary" type="submit">Buscar</button>
+              </form>
+          </div>
+      </div>
+      
+      <div id="map-msg" class="container lead">
+        <p>Introduce tu dirección o permite que la página la detecte automaticamente.</p>
+      </div>
+      <div id="map-container" class="bh-sl-map-container">
+          <div class="row">
+              <div id="map-results-container" class="container">
+                  <div id="bh-sl-map" class="bh-sl-map col-md-9"></div>
+                  <div class="bh-sl-loc-list col-md-3">
+                      <ul class="list list-unstyled"></ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+        <p>
+            <small>
+            Esta base de datos contiene <em>más de 100 centros sanitarios especializados en Urticaria Crónica</em>
+            del territorio español. Si quieres saber cómo se ha compilado esta información puedes visitar esta
+              <a href="http://www.urticariacronica.org/blablabla">página</a>.
+          </small>
+        </p>
+        <p>
+          <small><em>
+            Elaborado por la <a href="http://www.urticariacronica.org">Asociación de Afectados de Urticaria Crónica (AAUC)</a>
+            en base a una información propiedad de IMS Health.
+          </em> </small>
+        </p>
+      </div>
+  </div>
+
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/libs/handlebars.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzBOMFCuZ4F9hwUS1AyHx4rHBhMJsnhEQ&libraries=places"></script>
+  <script src="assets/js/plugins/storeLocator/jquery.storelocator.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

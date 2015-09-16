@@ -1,28 +1,19 @@
-/* Infowindow Roboto font override */
-.gm-style div,
-.gm-style span,
-.gm-style label,
-.gm-style a {
-  font-family: Arial, Helvetica, sans-serif;
-}
 .bh-sl-error {
   clear: both;
   float: left;
   width: 100%;
   padding: 10px 0;
-  color: #ae2118;
+  color: #00679F;
   font-weight: bold;
-}
-.bh-sl-container {
-  color: #333333;
-}
-.bh-sl-container .jumbotron {
-  padding-top: 30px;
 }
 .bh-sl-container .form-input input,
 .bh-sl-container .form-input select,
 .bh-sl-container .form-input label {
   margin-right: 10px;
+}
+.bh-sl-container .btn {
+    background-color: #00679F;
+    border-color: #00679F;
 }
 .bh-sl-container .bh-sl-loading {
   float: left;
@@ -61,7 +52,7 @@
   margin-top: 27px;
 }
 .bh-sl-container .bh-sl-map-container a {
-  color: #e76737;
+  color: #EF4D3C;
   text-decoration: none;
 }
 .bh-sl-container .bh-sl-map-container a:hover,
@@ -98,7 +89,7 @@
   width: 10%;
   max-width: 25px;
   text-align: center;
-  background: #451400;
+  background: #00679F;
   color: #ffffff;
   font-weight: bold;
 }
@@ -116,10 +107,10 @@
   color: #8e8e8e;
 }
 .bh-sl-container .bh-sl-loc-list .list-focus {
-  border: 1px solid rgba(150, 31, 23, 0.4);
-  -moz-box-shadow: 0 0 8px rgba(150, 31, 23, 0.4);
-  -webkit-box-shadow: 0 0 8px rgba(150, 31, 23, 0.4);
-  box-shadow: 0 0 8px rgba(150, 31, 23, 0.4);
+  border: 1px solid rgba(239, 77, 60, 0.4);
+  -moz-box-shadow: 0 0 8px rgba(239, 77, 60, 0.4);
+  -webkit-box-shadow: 0 0 8px rgba(239, 77, 60, 0.4);
+  box-shadow: 0 0 8px rgba(239, 77, 60, 0.4);
   transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
 }
 .bh-sl-container .bh-sl-loc-list .bh-sl-close-directions-container {
@@ -133,11 +124,10 @@
 }
 .bh-sl-container .bh-sl-loc-list .bh-sl-noresults-title {
   font-weight: bold;
-  color: #ae2118;
+  color: #00679F;
 }
 .bh-sl-container .loc-name {
-  /* Picked up by both list and infowindows */
-  color: #ae2118;
+  color: #00679F;
   font-weight: bold;
 }
 .bh-sl-container .bh-sl-map {
@@ -157,7 +147,7 @@
   padding: 10px;
   cursor: pointer;
   font: bold 14px Arial, Helvetica, sans-serif;
-  color: #ae2118;
+  color: #00679F;
   text-decoration: underline;
 }
 .bh-sl-container .bh-sl-pagination-container ol .bh-sl-current {
