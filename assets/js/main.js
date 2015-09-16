@@ -4,6 +4,10 @@ $(function () {
         'dataType': 'json',
         'dataLocation': 'data/locations.json',
         'defaultLoc': true,
+        'storeLimit': 150,
+        'pagination': true,
+        'locationsPerPage': 150,
+        'fullMapStart': true,
         'autoGeocode': true,
         'lengthUnit': 'km',
         'callbackNotify': function(msg) { $('#map-msg').text(msg); },
@@ -17,10 +21,10 @@ $(function () {
         'mapSettings': {
             zoom: 12,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
-            disableDoubleClickZoom: true,
             scrollwheel: false
         }
     });
+    console.log("aqui estem")
 });
 
 function initAutocomplete() {

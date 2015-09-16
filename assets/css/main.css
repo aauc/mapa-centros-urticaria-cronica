@@ -59,9 +59,21 @@
 .bh-sl-container .bh-sl-map-container a:active {
   text-decoration: underline;
 }
+
 .bh-sl-container .bh-sl-loc-list {
   height: 530px;
   overflow-x: auto;
+}
+.bh-sl-container .bh-sl-map {
+  height: 530px;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .bh-sl-container .bh-sl-map {
+    height: 320px;
+  }
+  .bh-sl-container .bh-sl-loc-list {
+    height: 320px;
+  }
 }
 .bh-sl-container .bh-sl-loc-list ul {
   display: block;
@@ -86,8 +98,8 @@
   float: left;
   margin: 10px 0 0 6px;
   padding: 2px 3px;
-  width: 10%;
-  max-width: 25px;
+  width: 17%;
+  max-width: 32px;
   text-align: center;
   background: #00679F;
   color: #ffffff;
@@ -129,9 +141,6 @@
 .bh-sl-container .loc-name {
   color: #00679F;
   font-weight: bold;
-}
-.bh-sl-container .bh-sl-map {
-  height: 530px;
 }
 .bh-sl-container .bh-sl-pagination-container {
   clear: both;
