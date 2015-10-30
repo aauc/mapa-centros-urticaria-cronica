@@ -3,7 +3,6 @@ $(function () {
     $('#map-container').storeLocator({
         'dataType': 'json',
         'dataLocation': 'data/locations.json',
-        'defaultLoc': true,
         'storeLimit': 150,
         'pagination': true,
         'locationsPerPage': 150,
@@ -24,7 +23,6 @@ $(function () {
             scrollwheel: false
         }
     });
-    console.log("aqui estem")
 });
 
 function initAutocomplete() {
